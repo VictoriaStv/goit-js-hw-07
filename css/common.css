@@ -201,3 +201,124 @@ ol {
 .form-submit:hover {
   background: #6c8cff;
 }
+
+/* Task-5 */
+.widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.widget p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+
+.change-color {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 148px;
+  height: 40px;
+  background: #4e75ff;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+}
+
+.change-color:hover {
+  background: #6c8cff;
+}
+
+/* Task-6 */
+
+#controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  padding: 32px;
+  margin-bottom: 16px;
+  width: 486px;
+
+  background: #f6f6fe;
+  gap: 16px;
+}
+
+input[type="number"] {
+  all: unset;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+#controls > input {
+  text-align: center;
+  border: 1px solid #808080;
+  border-radius: 8px;
+  width: 150px;
+  height: 40px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+#controls > button {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#controls > button[data-create] {
+  background: #4e75ff;
+}
+
+#controls > button[data-create]:hover {
+  background: #6c8cff;
+}
+
+#controls > button[data-destroy] {
+  background: #ff4e4e;
+}
+
+#controls > button[data-destroy]:hover {
+  background: #ff7070;
+}
+
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 486px;
+  padding: 32px;
+  gap: 10px;
+  border-radius: 8px;
+  background-color: #f6f6fe;
+}
